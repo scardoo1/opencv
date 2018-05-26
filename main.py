@@ -22,14 +22,14 @@ index      = 0
 videos=[[],[],[],[],[],[],[],[],[],[]]                 
 
 path = "input/video.mp4"
-cap = cv2.VideoCapture(path)                           # deschidem filmuletul video.mp4 din folderul input
+cap = cv2.VideoCapture(path)                          
 
 frames_num = cap.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT)   # frame number 
 fps        = cap.get(cv2.cv.CV_CAP_PROP_FPS)           # frames per second
 width      = cap.get(cv2.cv.CV_CAP_PROP_FRAME_WIDTH)   # width of frame
 height     = cap.get(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT)  # height of frame
 
-width = int(width)                                     # convertim la int pt a avea nr intreg
+width = int(width)                                     
 height = int(height)
 
 totalseconds = frames_num/fps            # duration of video clip, in seconds
